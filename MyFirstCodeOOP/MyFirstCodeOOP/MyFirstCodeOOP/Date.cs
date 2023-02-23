@@ -7,6 +7,7 @@ namespace MyFirstCodeOOP
     public class Date
     {
         #region Properties
+        //I created a new comment.
         public int _year;
         public int _month;
         public int _day;
