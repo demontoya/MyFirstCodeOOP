@@ -23,16 +23,17 @@ namespace MyFirstCodeOOP
                 Console.WriteLine(new Date(Convert.ToInt32(year), Convert.ToInt32(month), Convert.ToInt32(day)));
 
                 Console.WriteLine("++++++++++++TESTING LASTET IMPLEMENTATION+++++++++++++++++++");
+                
 
                 Employee salaryEmployee = new SalaryEmployee()
                 {
-                    Id = 100,
-                    FirstName = "Maria",
-                    LastName = "Posada",
-                    BirthDate = new Date(1950, 2, 5),
-                    HiringDate = new Date(2022, 12, 12),
-                    IsActive = true,
-                    Salary = 2000000.34M
+                    Id = Convert.ToInt32(Console.ReadLine()),
+                    FirstName = Console.ReadLine(),
+                    LastName = Console.ReadLine(),
+                    BirthDate = new Date(Convert.ToInt32(year), Convert.ToInt32(month), Convert.ToInt32(day)),
+                    HiringDate = new Date(Convert.ToInt32(year), Convert.ToInt32(month), Convert.ToInt32(day)),
+                    IsActive = Convert.ToBoolean(Console.ReadLine()),
+                    Salary = Convert.ToDecimal(Console.ReadLine())
                 };
 
                 Console.WriteLine(salaryEmployee);
